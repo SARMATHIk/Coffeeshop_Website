@@ -1,0 +1,770 @@
+/* Default code Starts here */
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-wrap: pretty;
+  /* border: 1px solid red; */
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  /* background-color: #f0f8ff; */
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+  text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  --primaryColor: #be9c79;
+  --secondaryColor: #660600;
+  --darkColor: #330300;
+  --lightColor: #d4cece;
+  --regularFont: 1.6rem;
+  --headingFont: 54px;
+  --ffPrimary: "Nunito", sans-serif;
+  --ffSecondary: "Merienda", cursive;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Default code Ends here */
+
+/* project standard classes Starts */
+
+.align {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 3rem;
+}
+
+.componentSpacing {
+  padding: 1em 0;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.dflex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dflex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.dflex-col-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+
+.d-flex-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+/* project standard classes Ends */
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--main-color);
+  cursor: pointer;
+  color: var(--white);
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+}
+
+.btn:hover {
+  background-color: var(--black);
+}
+
+h1,
+h2 {
+  font-family: "Merienda", cursive;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  }
+
+.navContainer {
+  /* background-color: #0b82d1a3; */
+  /* box-shadow:0 .6rem 2rem rgba(0,0,0,.4); */
+  width: 100%;
+}
+
+.navBar {
+  /* background-color: #d3f794d5; */
+  padding: 1rem;
+  position: sticky;
+  box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.navBody {
+  /*background-color: rgba(223, 192, 154, 0.888);*/
+}
+
+.logoImage {
+  /*background-color: rgb(245, 52,117);*/
+  width: 50%;
+  height: auto;
+  padding: 10px 0;
+}
+
+.logoImage img {
+  /*background-color: aqua;*/
+  width: auto;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.navLinks {
+  /* background-color: rgba(129, 218, 188, 0.878);*/
+  font-family: "Nunito" "sans-serif";
+  font-size: 2rem;
+  /* margin-right: 10px; */
+}
+
+.navLinks ul {
+  /* background-color: rgba(129, 218, 188, 0.878);*/
+}
+
+.navLinks li {
+  /*background-color: rgb(245, 216, 181);*/
+  display: inline-block;
+  font-size: 25px;
+  padding: 1.5rem;
+}
+
+.navLinks li a {
+  /*background-color: rgb(222, 154, 154);*/
+  text-decoration: none;
+  color: #393a3b;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.heroContainer {
+  /* background-color: rgb(137, 157, 229) */
+}
+
+.heroSection {
+  /* background-color: rgb(137, 157, 229) */
+}
+
+.heroBody {
+  background-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(90deg, rgb(243, 243, 243), transparent 70%),
+    url(assests/images/home-bg.jpg);
+  background-repeat: no-repeat repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 220px 0;
+}
+
+.heroJumbotron {
+  /* background-color: rgb(137, 157, 229); */
+  display: flex;
+  text-align: center;
+  width: 85rem;
+}
+
+.heroJumbotron h1 {
+  /* background-color: rgb(137, 157, 229) */
+  font-size: 6rem;
+  font-weight: 900;
+  font-family: "Merienda", cursive;
+}
+
+.heroJumbotron p {
+  /* background-color: rgb(137, 157, 229); */
+  padding: 2rem 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  /* margin-left: 1rem; */
+  margin-inline-start: 15px;
+  text-align: center;
+  width: 75%;
+}
+
+.heroJumbotron button {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #be9c79;
+  cursor: pointer;
+  color: white;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  border: none;
+}
+
+.heroJumbotron button:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+/* :::HEADER CODE ENDS HERE::: */
+
+/* OURMENU CODE STARTS HERE */
+main {
+  width: 100%;
+  height: auto;
+}
+
+.ourMenuContainer {
+  /* background-color: #dfe2e5; */
+}
+
+.ourMenu {
+  /* background-color: #dfe2e5; */
+}
+
+.ourMenuBody {
+  /* background-color: #dfe2e5; */
+}
+
+.ourMenuImage {
+  /* background-color: #dfe2e5; */
+  /* flex: 1 1 40rem; */
+}
+
+.ourMenuImage img {
+  /* background-color: #dfe2e5; */
+  width: 95%;
+}
+
+.ourMenuJumbotron {
+  /* background-color: #dfe2e5; */
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.ourMenuJumbotron h2 {
+  /* background-color: #9fcbf7; */
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.ourMenuJumbotron p {
+  /* background-color: #8da9c4; */
+  padding: 1rem 0;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.ourMenuJumbotron button {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #be9c79;
+  cursor: pointer;
+  color: white;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  border: none;
+}
+
+.ourMenuJumbotron button:hover {
+  background-color: #0c0201;
+}
+
+.facilityContainer {
+  /* background-color: rgb(239, 176, 83) */
+}
+
+.facility {
+  /* background-color: rgb(239, 176, 83) */
+}
+
+.headingBody {
+  /* background-color: rgb(239, 176, 83) */
+}
+
+.headingTitle {
+  /* background-color: rgb(239, 176, 83) */
+}
+
+.headingTitle img {
+  /* background-color: rgb(239, 176, 83) */
+  height: 4rem;
+}
+
+.headingTitle h2 {
+  /* background-color: rgb(239, 176, 83) */
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.facilityBody {
+  /* background-color: rgb(239, 176, 83) */
+}
+
+.facilityCard {
+  /* background-color: rgb(239, 176, 83) */
+  padding: 1rem;
+}
+
+.facilityCardHeader {
+  /* background-color: rgb(239, 176, 83) */
+}
+
+.facilityCardHeader img {
+  /* background-color: rgb(239, 176, 83) */
+}
+
+.facilityCardBody {
+  /* background-color: rgb(239, 176, 83) */
+}
+
+.facilityCardBody h3 {
+  /* background-color: rgb(239, 176, 83) */
+  margin: 1rem 0 1rem 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.facilityCardBody p {
+  /* background-color: rgb(239, 176, 83) */
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.menuContainer {
+  /* background-color: rgb(205, 84, 54) */
+}
+
+menu {
+  /* background-color: rgb(54, 152, 205) */
+}
+
+.menuTitle {
+  /* background-color: rgb(112, 205, 54) */
+}
+
+.headingTitle {
+  /* background-color: rgb(112, 205, 54) */
+  padding: 3rem;
+}
+
+.headingTitle h2 {
+  /* background-color: rgb(112, 205, 54) */
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.menuImage {
+  /* background-color: rgb(205, 192, 54) */
+}
+
+.menuImage img {
+  /* background-color: rgb(255, 65, 132) */
+  height: 35px;
+}
+
+.menuImage h2 {
+  /* background-color: rgb(208, 100, 179) */
+}
+
+.menuBody {
+  /* background-color: rgb(213, 236, 84) */
+  padding: 6rem;
+  grid-template-columns: repeat(auto-fit, 31rem);
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.cardTitle {
+  /* background-color: rgb(54, 205, 94) */
+}
+
+.cardTitle img {
+  /* background-color: rgb(54, 205, 205) */
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.cardBody {
+  /* background-color: rgb(206, 72, 230) */
+}
+
+.cardBody h4 {
+  /* background-color: rgb(54, 155, 205) */
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+
+.loveYouCoffee {
+  /* background-color: rgb(209, 232, 83) */
+}
+
+.cappuccino {
+  /*background-color: rgba(190, 205, 54, 0.782)*/
+}
+
+.mochaCoffee {
+  /*background-color: rgb(179, 97, 238)*/
+}
+
+.frappuccino {
+  /*background-color: rgb(210, 109, 158)*/
+}
+
+.blackCoffee {
+  /*background-color: rgb(130, 215, 147)*/
+}
+
+.loveHeartCoffee {
+  /*background-color: rgb(134, 172, 219)*/
+}
+
+.galleryContainer {
+  /*background-color: #d06860;*/
+}
+
+.gallery {
+  /* background-color: #cd6f69;*/
+}
+
+.headingBody {
+  /* background-color: #be9c79; */
+}
+
+.headingTitle h2 {
+  /* background-color: #be9c79; */
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.headingTitle img {
+  /* background-color: #be9c79; */
+  height: 35px;
+}
+
+.galleryBody {
+  /* background-color: #be9c79; */
+}
+
+.galleryCard {
+  /*background-color: #f4c393;*/
+  padding: 1.5rem;
+  grid-template-columns: repeat(auto-fit, 30rem);
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.galleryCard img {
+  /* background-color: #be9c79; */
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+
+.headingTitle h2 {
+  /* background-color: #330300; */
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.headingTitle img {
+  /* background-color: #330300; */
+  height: 35px;
+}
+
+.teamContainer {
+  /* background-color: #330300; */
+}
+
+.team {
+  /* background-color: #330300; */
+}
+
+.headingBody {
+  /* background-color: #330300; */
+}
+
+.headingTitle {
+  /* background-color: #330300; */
+}
+
+.teamBody {
+  /* background-color: #330300; */
+  /* padding: 3rem; */
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 32rem);
+}
+
+.teamCard {
+  /*background-color: #c96a63;*/
+  padding: 1.6rem;
+  width: 100%;
+}
+
+.teamCard img {
+  /* background-color: #330300; */
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.teamCardBody h3 {
+  /* background-color: #330300; */
+  font-size: 2rem;
+  color: #2c3135;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+/* ::: MAIN CODE START HERE::: */
+
+/* :::FOOTER CODE START HERE::: */
+footer {
+  width: 100%;
+  height: auto;
+}
+
+.contactContainer {
+  /* background-color: #be9c79; */
+}
+
+.contact {
+  /* background-color: #be9c79; */
+}
+
+.headingBody {
+  /* background-color: #be9c79; */
+}
+
+.headingTitle {
+  /* background-color: rgb(194, 200, 206); */
+  padding: 1rem;
+}
+
+.headingTitle img {
+  /* background-color: rgb(194, 200, 206); */
+  height: 35px;
+}
+
+.headingTitle h2 {
+  /* background-color: #be9c79; */
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.formBlock {
+  /* background-color: #be9c79; */
+  margin-bottom: 25px;
+}
+
+.formImage {
+  /* background-color: #be9c79; */
+  padding: 0.3rem;
+}
+
+.formImage img {
+  /* background-color: #be9c79; */
+}
+
+.bookingForm {
+  /* background-color: #090908; */
+  outline: #0f0801 solid 0.1rem;
+  text-align: center;
+  width: 95%;
+  font-weight: 600;
+  margin-top: 8rem;
+  padding: 2rem;
+  line-height: 1;
+}
+
+.bookingForm h3 {
+  /* background-color: #be9c79; */
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+}
+
+form {
+  /* background-color: #be9c79; */
+  width: 92%;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+.formGroup {
+  /* background-color: #be9c79; */
+  margin: 1rem 3rem;
+  width: 100%;
+  margin-left: 2rem;
+}
+
+.formGroup input {
+  /* background-color: #be9c79; */
+  padding: 0.7rem;
+  /* margin: 10px 20px; */
+  width: 100%;
+  margin: 10px;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.formGroup button {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #be9c79;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  border: none;
+}
+
+.formGroup button:hover {
+  background-color: #0f0801;
+}
+
+.contactIconsContainer {
+  /* background-color: rgb(102, 236, 236); */
+}
+
+.contactIcons {
+  /* background-color: rgb(102, 236, 236); */
+}
+
+.iconsBody {
+  /* background-color: rgb(102, 236, 236); */
+}
+
+.IconsCard {
+  /* background-color: rgb(102, 236, 236); */
+  padding: 2rem;
+}
+
+.iconsCardHeader {
+  /* background-color: rgb(102, 236, 236); */
+}
+
+.iconsCardHeader i {
+  font-size: 35px;
+  line-height: 2;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 70%;
+  background-color: #be9c79;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.iconsCardBody {
+  /* background-color: rgb(102, 236, 236); */
+}
+
+.iconsCardBody h3 {
+  /* background-color: rgb(102, 236, 236); */
+  margin: 0.5rem 0 0.8rem 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.iconsCardBody p {
+  /* background-color: rgb(102, 236, 236); */
+  font-size: 1.9rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.copyrightBody {
+  /* background-color: rgb(102, 236, 236); */
+}
+
+.copyright {
+  /* background-color: rgb(102, 236, 236); */
+  padding: 1rem;
+}
+
+hr {
+  border: 0.9px solid rgb(50, 50, 50);
+}
+
+.copyright p {
+  /* background-color: rgb(102, 236, 236); */
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1.95rem;
+  font-weight: 400;
+}
+
+.copyright span {
+  /* background-color: rgb(102, 236, 236); */
+  color: #be9c79;
+  font-weight: 600;
+}
+
+/* :::FOOTER CODE ENDS HERE::: */
